@@ -19,6 +19,7 @@ class ZufaelligeNotengebungTest {
 	void testGeneriereZufaelligePruefungsnote() {
 		for (int i = 0; i < 1000000; i++) {
 			assertTrue(zufaelligeNotengebung.generiereZufaelligePruefungsnote() < 6.0);
+			assertTrue(zufaelligeNotengebung.generiereZufaelligePruefungsnote() > 1.0);
 		}
 	}
 }

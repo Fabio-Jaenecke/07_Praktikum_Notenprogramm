@@ -63,7 +63,12 @@ public class Pruefungsverwaltung {
 	}
 
 	double rundeAufHalbeNote(double note) {
-		return Math.round(note * 2) / 2.0;
+		if (note <= 6.0 && note >= 1.0) {
+			return Math.round(note * 2) / 2.0;
+		} else {
+			return note = 1;
+		}
+		
 	}
 
 	String generiereText(String student, double note) {
